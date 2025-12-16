@@ -46,6 +46,8 @@ void compute_input(char *input){
 
 int main(){
     
+    printf("\n====================\nCalculateur de Cribles\n====================\n\n");
+    printf("entrer expression : ");
     //char expr[] = "a(i( n(a(  a(a(c(13, 3), c(13,5)) ,c(13,7)), c(13, 9))), c(11,2)),a(i(n(a(c(11, 4), c(11, 8))), c(13, 9)), a(c(13, 0), a(c(13,1), c(13, 6)))))";
     
     char *input = get_input();
@@ -53,6 +55,7 @@ int main(){
     compute_input(input);
 
     
+    printf("\n====================\nfin du programme\n====================\n\n");
 
     return 0;
 }

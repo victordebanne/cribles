@@ -6,7 +6,7 @@
 #include "tree.h"
 
 
-#define SIZE 20
+#define SIZE 130
 #define MAX 1024
 
 
