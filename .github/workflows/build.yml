@@ -1,1 +1,24 @@
+name: Build XEN (macOS)
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build-macos:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Compile XEN
+        run: |
+          clang -Wall -Wextra -Wpedantic \
+            main.c \
+            arbres.c \
+            expression.c \
+            array.c \
+            logic.c \
+            -o XEN_v1_2_mac
 
