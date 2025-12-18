@@ -38,8 +38,10 @@ list cr(int div, int rest, int size){
             append(&l, i);
         }
     }
-    return l;
+    return l; 
 }
+
+
 
 list add(list *a, list *b){
     list l = create_list(0);

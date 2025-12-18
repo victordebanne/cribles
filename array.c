@@ -46,7 +46,7 @@ void display_list(list *l){
 }
 
 void sort(list *a){
-    int i = 1;
+    int i = 1; 
     while(i < a->size){
         if(a->values[i] < a->values[i-1]){
             int b = a->values[i];
@@ -59,4 +59,11 @@ void sort(list *a){
             i++;
         }
     }
+}
+
+list list_error(){
+    list l;
+    l.size = -1;
+    l.values = NULL;
+    return l;
 }

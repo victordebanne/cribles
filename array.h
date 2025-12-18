@@ -18,4 +18,6 @@ void display_list(list *l);
 
 void sort(list *a);
 
+list list_error();
+
 #endif

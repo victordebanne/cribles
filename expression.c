@@ -30,6 +30,8 @@ char *strip(char *string){
         }
     }
     out[j] = '\0';
+
+  
     return out;
 }
 
@@ -93,13 +95,20 @@ char **extract_coma(char *string){
     for(int j = 0; j < len - i; j++){
         extracted[1][j] = string[i + j];
     }
-    extracted[1][len - i] = '\0';
+    extracted[1][len - i] = '\0'; //correction d'une unité
     
 
     return extracted;
 }
 
 int char_to_int(char *string){
+    int len = string_length(string);
+    for (int j = 0; j < len; j++){
+        if (string[j] < '0' || string[j] > '9'){
+            printf("Value error : '%s'\n", string);
+            return -1;
+        }
+    }
     int i = atoi(string);
     return i;
 }
