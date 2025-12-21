@@ -1,16 +1,26 @@
-#ifndef LOGIC_H
-#define LOGIC_H
+#ifndef LOGIC2_H
+#define LOGIC2_H
 
 #include "array.h"
 
-int in_array(list *a, int j);
+list cr(int a, int b, int size_max);
 
-list non(list *a, int size);
+list non(list *l, int size_max);
+
+list add(list *a, list *b);
 
 list inter(list *a, list *b);
 
-list cr(int div, int rest, int size);
+/*
+int main(){
 
-list add(list *a, list *b);
+    list l = cr(7,0);
+    list m = non(&l);
+    list n = add(&m, &l);
+    display_list(&n);
+
+    return 0;
+}
+*/
 
 #endif
