@@ -52,3 +52,18 @@ XEN 1.3 :
 - refonte de logic.c avec complexité O(n)
 
 - correction bug sur un type d'erreur de parenthèses
+
+XEN 1.4 alpha : 
+
+- ajout de la fonction m() (musique) pour l'affichage en notes
+  
+- ajout de la fonction s() (shifting) pour le décalage des listes
+
+La fonction m() et s() apportent des bugs innhérents à leurs fonctionnement:
+
+- erreur d'affichage des octaves > 20
+
+- le shifting negatif n'est pas comptabilisé
+
+ces bugs seront corrigés dans une version 1.4
+
