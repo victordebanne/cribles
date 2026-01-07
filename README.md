@@ -56,8 +56,12 @@ XEN 1.3 :
 XEN 1.4 alpha : 
 
 - ajout de la fonction m() (musique) pour l'affichage en notes
+
+  m() ne peut être que la première fonction. elle prend en argument une expression. 
   
 - ajout de la fonction s() (shifting) pour le décalage des listes
+
+  s() peut se placer sur chaque expression. Elle prend deux arguments : x, l'expression et k, le décalage. s(x, k)
 
 La fonction m() et s() apportent des bugs innhérents à leurs fonctionnement:
 
